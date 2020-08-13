@@ -1,23 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    width: 640px;
+    height: 100px;
+    background-color: #1b6d85;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px #2b542c solid ;
+}
+
+.scole{
+    float: left;
+    flex: 1;
+    text-align:center;
+    color: white;
+}
+
+.speech{
+    float: left;
+    flex: 2;
+    text-align:center;
+}
+
+.btn{
+    width: 100px;
+}
+
+
 .content {
     width: 640px;
     height: 640px;
-    margin: 100px auto;
+    margin: 0 auto;
     position: relative;
     background-color: #1b6d85;
-    clear: both;
-    overflow:hidden;
+    /*clear: both;*/
+    /*overflow:hidden;*/
 }
 .sma {
-    float: left;
-    margin: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
     width: 600px;
     height: 600px;
     background: rgba(0,0,0,0.3);
 }
+
+.snackWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+}
+
 .btnn{
-    width: 200px;
-    height: 100px;
-    font-size: 100px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -30,30 +69,47 @@
     background-image: url("../img/play.png");
     background-size: 100%;
 }
-
 .pauseBtn{
-    width: 150px;
-    height: 143px;
+    width: 143px;
+    height: 137px;
     background-image: url("../img/stop.png");
     background-size: 100%;
-}
-.play{
-    background: none;
-    border: none;
+    display: none;
 }
 
-.stop{
-    background: none;
-    border: none;
-    /*background-size: 100% 100%;*/
-    /*cursor: pointer;*/
-    /*outline: none;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*top: 50%;*/
+.btnnn{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
-/*.startBtn button{*/
-/*    width: 200px;*/
-/*    height: 80px;*/
-/*    background-image: url("../img/play.jpg");*/
-/*}*/
+
+.big {
+    width: 600px;
+    height: 30px;
+}
+
+.little {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.4);
+}
+.sma {
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow:hidden;
+}
+
+.hed {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+
+}
+

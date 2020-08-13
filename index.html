@@ -10,15 +10,471 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <div class="content">
-        <div class="sma">
-            <div class="btnn startBtn"><button class="play"></button></div>
-            <div class="btnn pauseBtn"><button class="stop"></button></div>
-            <div id="snackWrap"></div>
+    <!--头部-->
+    <div class="head">
+        <div class="scole">得分是：<span id="aaa"></span></div>
+        <div class="speech">
+            <button type="button" class="btn btn-warning" id="fast">快</button>
+            <button type="button" class="btn btn-warning" id="midd">中</button>
+            <button type="button" class="btn btn-warning" id="slow">慢</button>
         </div>
     </div>
 
 
-    <script src="js/index.js"></script>
+    <!--游戏部分-->
+    <div class="content">
+        <div class="sma">
+            <!--开始-->
+            <div class="btnn startBtn" id="startBtn"><button class="btnnn" onclick="kaishi()"></button></div>
+            <!--暂停-->
+            <div class="btnn pauseBtn" id="pauseBtn"><button class="btnnn" onclick="back()"></button></div>
+            <!--游戏中-->
+            <div class="snackWrap">
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+                <div class="big">
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                    <div class="little"></div>
+                </div>
+            </div>
+            <div id="map" onclick="zanting()"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 </html>
