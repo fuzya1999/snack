@@ -76,6 +76,13 @@
     background-size: 100%;
     display: none;
 }
+.over {
+    width: 600px;
+    height: 314px;
+    background-image: url("../img/over.png");
+    background-size: 100%;
+    display: none;
+}
 
 .btnnn{
     width: 100%;
@@ -110,6 +117,14 @@
     width: 30px;
     height: 30px;
     position: absolute;
+    border-radius: 50%;
+}
 
+.hedd {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url("../img/head.png");
+    background-size: 100%;
 }
 

@@ -1,4 +1,5 @@
 var map = document.getElementById("map");
+var over = document.getElementById("over");
 var aaa = document.getElementById("aaa");
 var fast = document.getElementById("fast");
 var midd = document.getElementById("midd");
@@ -11,8 +12,13 @@ var b = 0;
 var bodyNodes = [];
 var nodes = [];
 
+function restart() {
+    startBtn.style.display = "block";
+    over.style.display = "none";
+}
+
 function die() {
-    
+    over.style.display = "block";
 }
 
 function kaishi() {
@@ -45,8 +51,16 @@ function createDiv(color) {
     map.appendChild(hed);
     return hed;
 }
+function createHead() {
+    var hedd = document.createElement("div");
+    hedd.className = "hedd";
+    hedd.style.left = parseInt(Math.random()*20)*30 + "px";
+    hedd.style.top = parseInt(Math.random()*20)*30 + "px";
+    map.appendChild(hedd);
+    return hedd;
+}
 
-var headNode = createDiv("red");
+var headNode = createHead();
 nodes.push(headNode);
 headNode.value = "右";
 var foodNode = createDiv("green");
