@@ -12,11 +12,6 @@ var b = 0;
 var bodyNodes = [];
 var nodes = [];
 
-function restart() {
-    startBtn.style.display = "block";
-    over.style.display = "none";
-}
-
 function die() {
     over.style.display = "block";
 }
