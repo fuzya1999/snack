@@ -12,7 +12,7 @@
 截图：  
 ![Image text](https://github.com/fuzya1999/snack/blob/master/img/1.jpg)  
 
-![Image text](https://github.com/fuzya1999/snack/blob/master/img/2.jpg)  
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/2.png)  
 
 ![Image text](https://github.com/fuzya1999/snack/blob/master/img/3.jpg)  
 
