@@ -10,6 +10,15 @@
 注：右上角会选择得分，吃到一个果子得一分，身体长一节。  
 
 截图：  
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/1.jpg)  
+
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/2.jpg)  
+
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/3.jpg)  
+
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/4.jpg)  
+
+![Image text](https://github.com/fuzya1999/snack/blob/master/img/5.jpg)  
 
 
 
